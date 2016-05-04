@@ -25,10 +25,12 @@ import kuy.netheraddtional.Tools.Magumahammerdic;
 import kuy.netheraddtional.Tools.Netherhammer;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 @Mod(modid = Kuynethermain.MOD_ID, name = "Kuynetheraddtional", version = "1.0")
@@ -145,8 +147,340 @@ public class Kuynethermain {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Kuynethermain.kuynether, 3, 7),
 				new Object[] { new ItemStack(Kuynethermain.soul), "hammer" }));
 		GameRegistry.addShapelessRecipe(new ItemStack(Kuynethermain.kuynether, 1, 3),
-				new ItemStack(Kuynethermain.kuynether, 1, 1), new ItemStack(Kuynethermain.kuynether, 1, 7));
-
+				new ItemStack(Kuynethermain.kuynether, 8, 0), new ItemStack(Kuynethermain.kuynether, 1, 7));
+		GameRegistry.addRecipe(new ItemStack(Kuynethermain.tilefires), "F F", "F F", "F F", 'F',
+				new ItemStack(Items.iron_ingot));
+		GameRegistry.addShapelessRecipe(new ItemStack(Kuynethermain.Railcamo, 1, 0), new ItemStack(Blocks.rail),
+				new ItemStack(Blocks.soul_sand));
+		GameRegistry.addRecipe(new ItemStack(Kuynethermain.tiletorch, 4, 0), "F", "A", " ", 'F',
+				new ItemStack(Kuynethermain.kuynether, 1, 1), 'A', new ItemStack(Items.stick));
+		GameRegistry.addRecipe(new ItemStack(Kuynethermain.tiletorch2, 4, 0), "F", "A", " ", 'F',
+				new ItemStack(Kuynethermain.kuynether, 1, 4), 'A', new ItemStack(Items.stick));
+		GameRegistry.addRecipe(new ItemStack(Kuynethermain.tile2, 1, 14), "FFF", "FFF", "FFF", 'F',
+				new ItemStack(Kuynethermain.kuynether, 1, 5));
+		GameRegistry.addRecipe(new ItemStack(Kuynethermain.tile2, 1, 15), "FFF", "FFF", "FFF", 'F',
+				new ItemStack(Kuynethermain.kuynether, 1, 8));
+		GameRegistry.addShapelessRecipe(new ItemStack(Kuynethermain.kuynether, 9, 5),
+				new ItemStack(Kuynethermain.tile2, 1, 14));
+		GameRegistry.addShapelessRecipe(new ItemStack(Kuynethermain.kuynether, 9, 8),
+				new ItemStack(Kuynethermain.tile2, 1, 15));
+		// tile1
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 0),
+				new Object[] { "ABC", "   ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 1),
+				new Object[] { "ABA", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 2),
+				new Object[] { "AB ", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 3),
+				new Object[] { " AB", " C ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 4),
+				new Object[] { "AC ", "B  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 5),
+				new Object[] { "BC ", "A  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 6),
+				new Object[] { "AC ", "   ", "B  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 7),
+				new Object[] { "BC ", "   ", "A  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 8),
+				new Object[] { "A  ", " BC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 9),
+				new Object[] { "B  ", " AC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 10),
+				new Object[] { "A  ", "   ", "CB ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 11),
+				new Object[] { "B  ", "   ", "CA ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 12),
+				new Object[] { "A  ", " CB", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 13),
+				new Object[] { "B  ", " CA", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 14),
+				new Object[] { "A  ", "  C", "  B", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile1, 1, 15),
+				new Object[] { "B  ", "  C", "  A", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stone) }));
+		// tile2
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 0),
+				new Object[] { "ABC", "   ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 1),
+				new Object[] { "ABA", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 2),
+				new Object[] { "AB ", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 3),
+				new Object[] { " AB", " C ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 4),
+				new Object[] { "AC ", "B  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 5),
+				new Object[] { "BC ", "A  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 6),
+				new Object[] { "AC ", "   ", "B  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 7),
+				new Object[] { "BC ", "   ", "A  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 8),
+				new Object[] { "A  ", " BC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 9),
+				new Object[] { "B  ", " AC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 10),
+				new Object[] { "A  ", "   ", "CB ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 11),
+				new Object[] { "B  ", "   ", "CA ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 12),
+				new Object[] { "A  ", " CB", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile2, 1, 13),
+				new Object[] { "B  ", " CA", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 7), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		// tile3
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 0),
+				new Object[] { "ABC", "   ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 1),
+				new Object[] { "ABA", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 2),
+				new Object[] { "AB ", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 3),
+				new Object[] { " AB", " C ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 4),
+				new Object[] { "AC ", "B  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 5),
+				new Object[] { "BC ", "A  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 6),
+				new Object[] { "AC ", "   ", "B  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 7),
+				new Object[] { "BC ", "   ", "A  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 8),
+				new Object[] { "A  ", " BC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 9),
+				new Object[] { "B  ", " AC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 10),
+				new Object[] { "A  ", "   ", "CB ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 11),
+				new Object[] { "B  ", "   ", "CA ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 12),
+				new Object[] { "A  ", " CB", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 13),
+				new Object[] { "B  ", " CA", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 14),
+				new Object[] { "A  ", "  C", "  B", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile3, 1, 15),
+				new Object[] { "B  ", "  C", "  A", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.stonebrick) }));
+		// tile4
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 0),
+				new Object[] { "ABC", "   ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 1),
+				new Object[] { "ABA", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 2),
+				new Object[] { "AB ", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 3),
+				new Object[] { " AB", " C ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 4),
+				new Object[] { "AC ", "B  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 5),
+				new Object[] { "BC ", "A  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 6),
+				new Object[] { "AC ", "   ", "B  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 7),
+				new Object[] { "BC ", "   ", "A  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 8),
+				new Object[] { "A  ", " BC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 9),
+				new Object[] { "B  ", " AC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 10),
+				new Object[] { "A  ", "   ", "CB ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 11),
+				new Object[] { "B  ", "   ", "CA ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 12),
+				new Object[] { "A  ", " CB", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 13),
+				new Object[] { "B  ", " CA", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 14),
+				new Object[] { "A  ", "  C", "  B", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile4, 1, 15),
+				new Object[] { "B  ", "  C", "  A", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 6), Character.valueOf('B'),
+						new ItemStack(Blocks.quartz_block) }));
+		// tile5
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 0),
+				new Object[] { "ABC", "   ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 1),
+				new Object[] { "ABA", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 2),
+				new Object[] { "AB ", "C  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 3),
+				new Object[] { " AB", " C ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 4),
+				new Object[] { "AC ", "B  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 5),
+				new Object[] { "BC ", "A  ", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 6),
+				new Object[] { "AC ", "   ", "B  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 7),
+				new Object[] { "BC ", "   ", "A  ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 8),
+				new Object[] { "A  ", " BC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 9),
+				new Object[] { "B  ", " AC", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 10),
+				new Object[] { "A  ", "   ", "CB ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 11),
+				new Object[] { "B  ", "   ", "CA ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 12),
+				new Object[] { "A  ", " CB", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 13),
+				new Object[] { "B  ", " CA", "   ", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 14),
+				new Object[] { "A  ", "  C", "  B", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Kuynethermain.tile5, 1, 15),
+				new Object[] { "B  ", "  C", "  A", Character.valueOf('C'), "hammer", Character.valueOf('A'),
+						new ItemStack(Kuynethermain.kuynether, 1, 0), Character.valueOf('B'),
+						new ItemStack(Blocks.glowstone) }));
 		// furnaceRecipes
 		GameRegistry.addSmelting(Kuynethermain.greenquatz, new ItemStack(Items.quartz), 0.35f);
 		GameRegistry.addSmelting(Kuynethermain.cummingtonite, new ItemStack(Kuynethermain.kuynether, 2, 0), 0.35f);
